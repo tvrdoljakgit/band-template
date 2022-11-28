@@ -1,0 +1,123 @@
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  display: block;
+}
+
+.navbar ul {
+  display: block;
+  height: fit-content !important;
+  position: relative;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+li.search-icon {
+  display: none !important;
+}
+
+li.more-link {
+  display: none !important;
+}
+
+.hamburger-elements {
+  /* background-color: red; */
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  display: inline-block;
+  /* float: right; */
+  top: 11px;
+  right: 20px;
+}
+
+.hamburger div {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px 0;
+}
+
+/* bg-image */
+
+.bg-img {
+  height: 30vh;
+}
+
+.landing-title {
+  height: 30vh;
+}
+
+.landing-title h3 {
+  margin-bottom: -15px;
+}
+
+.about {
+  height: 1400px;
+}
+
+.boxes {
+  display: block;
+}
+
+.about .boxes .box {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 80px;
+}
+
+.about .boxes .box .img {
+  width: 60%;
+  height: 200px;
+  background-size: cover;
+  margin: auto;
+}
+
+/* dates */
+
+.dates .boxes .box {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.dates .boxes .box .img {
+  width: 100%;
+}
+
+/* footer */
+
+.contact-info {
+  display: block;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-inline-el {
+  display: block;
+  width: 100% !important;
+  margin-bottom: 5px;
+  border: none;
+  border: 1px solid rgba(51, 51, 51, 0.517);
+}
+
+.flex-input {
+  display: block;
+}
+
+.form-block-el {
+  margin-top: 5px;
+
+  border: none;
+  border: 1px solid rgba(51, 51, 51, 0.517);
+}

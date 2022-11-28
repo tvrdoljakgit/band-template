@@ -1,0 +1,287 @@
+:root {
+  --blackColor: #000;
+  --hoverNavColor: rgb(73, 72, 72);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+/* utilities */
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.py-div {
+  padding: 80px 0px;
+}
+
+.py-heading {
+  padding: 0px 0px 20px 0px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--blackColor);
+  color: #fff;
+}
+
+/* navigation */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blackColor);
+  /* background-color: red; */
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger-elements {
+  display: block;
+}
+
+/* zbog bugga u scripti js */
+
+@media (min-width: 768px) {
+  .hamburger-elements {
+    display: block !important;
+  }
+}
+
+.navbar i {
+  margin-left: 2px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+}
+
+.navbar ul li ul.dropdown li {
+  display: block;
+}
+
+.navbar ul li ul.dropdown {
+  width: 150px;
+  position: absolute;
+  background-color: var(--blackColor);
+  display: none;
+  font-size: 14px;
+}
+
+.navbar ul li:hover ul.dropdown {
+  display: block;
+}
+
+.navbar ul li:hover ul.dropdown li a:hover {
+  background-color: var(--hoverNavColor);
+}
+
+/* landing page --> img */
+
+.bg-img {
+  background-image: url("/img/chicago.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-title {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: #fff;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* about section */
+.text-center {
+  text-align: center;
+}
+
+.italic {
+  font-style: italic;
+  color: var(--hoverNavColor);
+}
+
+.about {
+  height: 100%;
+}
+
+.boxes {
+  display: flex;
+  width: 100%;
+  height: 170px;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.about .boxes .box {
+  width: 30%;
+  height: 100%;
+}
+
+.about .boxes .box p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about .boxes .box .img {
+  background: url("/img/bandmember.jpg") no-repeat center center/contain;
+  height: 83%;
+}
+
+/* dates-section */
+
+.sold-out {
+  color: #fff;
+  margin-left: 20px;
+  background-color: rgba(229, 61, 61, 0.963);
+  padding: 4px 6px;
+}
+
+.still-left {
+  color: #fff;
+  float: right;
+  margin-right: 15px;
+  background-color: #000;
+  padding: 2px 10px;
+  border-radius: 50%;
+}
+
+.dates {
+  background-color: var(--blackColor);
+  color: #fff;
+}
+
+.dates .boxes {
+  height: 100%;
+  color: var(--blackColor);
+}
+
+.dates .boxes .box {
+  width: 32%;
+  height: 400px;
+  background-color: #fff;
+}
+
+.dates .boxes .box .img {
+  background: url("/img/newyork.jpg");
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 45%;
+}
+
+/* table */
+
+table {
+  color: var(--blackColor);
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 40px;
+}
+
+td,
+th {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--blackColor);
+}
+
+/* DATES section */
+
+.box-content {
+  padding: 15px;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-content button {
+  width: 100px;
+  padding: 10px;
+}
+
+.dates .boxes .box:nth-child(2) .img {
+  background-color: red;
+  background: url("/img/paris.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* CONTACT - section */
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location {
+  width: 47%;
+}
+.form {
+  width: 49%;
+}
+
+.form input {
+  padding: 7px;
+}
+
+.form-inline-el {
+  width: 48%;
+}
+
+.form-block-el {
+  display: block;
+
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.flex-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form button {
+  float: right;
+  margin-right: 6px;
+  background-color: var(--blackColor);
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+}
